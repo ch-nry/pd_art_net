@@ -1,0 +1,20 @@
+#N canvas 236 197 645 254 10;
+#X obj 29 154 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 29 179 art_net 192.168.0.111;
+#X obj 29 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 47 152 connect;
+#X text 47 206 connection;
+#X obj 272 125 tabwrite DMX;
+#X text 175 180 Argument : IP address of the receiver;
+#X floatatom 341 104 5 0 0 0 - - -;
+#X floatatom 272 76 5 0 0 0 - - -;
+#X text 316 75 value : from 0 to 255;
+#X text 215 16 The art_net abstraction use a DMX table. You should
+write in this table.;
+#X text 379 104 DMX address : from 0 to 511;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 7 0 5 1;
+#X connect 8 0 5 0;
